@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Taste Restaurant</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+        href="https://unpkg.com/aos@next/dist/aos.css"
+        rel="stylesheet"
+    />
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <h2>Royal Taste</h2>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Royal Taste
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle">
+                    🌙
+                </button>
+
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content" data-aos="fade-up">
+
+            <h1>
+                Experience Fine Dining Like Never Before
+            </h1>
+
+            <p>
+                Delicious food, elegant ambiance, unforgettable memories.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#reservation" class="btn">
+                    Book Table
+                </a>
+
+                <a href="#menu" class="btn btn-secondary">
+                    Explore Menu
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Us</h2>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text" data-aos="fade-right">
+
+                    <h3>Welcome To Royal Taste</h3>
+
+                    <p>
+                        Royal Taste Restaurant offers premium dining
+                        experiences with world-class chefs, fresh ingredients,
+                        and exceptional service.
+                    </p>
+
+                    <p>
+                        Whether you're celebrating a special occasion or
+                        enjoying a casual meal, we create unforgettable
+                        culinary moments.
+                    </p>
+
+                </div>
+
+                <div class="about-image" data-aos="fade-left">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+                        alt="Restaurant"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+
+        <div class="stat-box">
+            <h3>15+</h3>
+            <p>Years Experience</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>25K+</h3>
+            <p>Happy Customers</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>100+</h3>
+            <p>Menu Items</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>4.9★</h3>
+            <p>Rating</p>
+        </div>
+
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Our Menu</h2>
+            </div>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search dishes..."
+            >
+
+            <div class="filters">
+
+                <button onclick="filterMenu('all')">
+                    All
+                </button>
+
+                <button onclick="filterMenu('veg')">
+                    Veg
+                </button>
+
+                <button onclick="filterMenu('nonveg')">
+                    Non-Veg
+                </button>
+
+                <button onclick="filterMenu('dessert')">
+                    Desserts
+                </button>
+
+            </div>
+
+            <div id="menuContainer" class="menu-grid">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AI Recommendation -->
+    <section class="recommendation section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>AI Food Recommendation</h2>
+            </div>
+
+            <div class="recommend-box">
+
+                <select id="foodMood">
+
+                    <option value="">
+                        Select Preference
+                    </option>
+
+                    <option value="spicy">
+                        Spicy
+                    </option>
+
+                    <option value="healthy">
+                        Healthy
+                    </option>
+
+                    <option value="sweet">
+                        Sweet
+                    </option>
+
+                    <option value="veg">
+                        Vegetarian
+                    </option>
+
+                </select>
+
+                <button onclick="recommendFood()">
+                    Recommend Dish
+                </button>
+
+                <h3 id="result"></h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Special Offers -->
+    <section class="offers section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Today's Offers</h2>
+            </div>
+
+            <div class="offer-cards">
+
+                <div class="offer-card">
+                    <h3>20% OFF</h3>
+                    <p>On all pizzas every Friday.</p>
+                </div>
+
+                <div class="offer-card">
+                    <h3>Buy 1 Get 1</h3>
+                    <p>Free desserts on weekends.</p>
+                </div>
+
+                <div class="offer-card">
+                    <h3>Family Combo</h3>
+                    <p>Special family package for ₹999.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Gallery</h2>
+            </div>
+
+            <div class="gallery-grid">
+
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de" alt="">
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b" alt="">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="">
+                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1" alt="">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Reserve A Table</h2>
+            </div>
+
+            <form id="reservationForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+
+                <input
+                    type="time"
+                    id="time"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="guests"
+                    placeholder="Guests"
+                    required
+                >
+
+                <button type="submit">
+                    Book Now
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+            </div>
+
+            <div class="review-slider">
+
+                <div class="review active">
+                    <p>
+                        Amazing food and fantastic service!
+                    </p>
+                    <h4>- Rahul</h4>
+                </div>
+
+                <div class="review">
+                    <p>
+                        Best restaurant experience in town.
+                    </p>
+                    <h4>- Priya</h4>
+                </div>
+
+                <div class="review">
+                    <p>
+                        Loved the ambiance and desserts.
+                    </p>
+                    <h4>- Arjun</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section">
+
+        <div class="container">
+
+            <h2>
+                Subscribe For Offers
+            </h2>
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter Email"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="contactName"
+                    placeholder="Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="contactEmail"
+                    placeholder="Email"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Message"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+            <div class="map">
+
+                <iframe
+                    src="https://maps.google.com/maps?q=Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen
+                ></iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Royal Taste Restaurant</h3>
+
+        <div class="socials">
+
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+        </div>
+
+        <p>
+            © 2026 Royal Taste. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- WhatsApp -->
+    <a
+        href="https://wa.me/919999999999"
+        class="whatsapp"
+        target="_blank"
+    >
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Toast -->
+    <div id="toast"></div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
