@@ -229,3 +229,4 @@ This website helps restaurants:
 
 <img width="1902" height="960" alt="image" src="https://github.com/user-attachments/assets/2632393b-8c5f-4c4c-9594-c49e5c0857dd" />
 
+<img width="1878" height="1195" alt="image" src="https://github.com/user-attachments/assets/f7cdd28a-ffc3-4dda-9479-62eba3890451" />
