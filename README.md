@@ -241,3 +241,8 @@ This website helps restaurants:
 <img width="1865" height="4418" alt="image" src="https://github.com/user-attachments/assets/a1276b14-6387-418e-9151-dea2d101013e" />
 
 <img width="1882" height="896" alt="image" src="https://github.com/user-attachments/assets/81906934-266c-4ae3-9551-0c5c7716883d" />
+
+
+
+
+<img width="1897" height="895" alt="image" src="https://github.com/user-attachments/assets/5f23b909-dbab-4ad0-942f-fb31637fbfc5" />
