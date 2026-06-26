@@ -1,8 +1,8 @@
-# 🍽️ Royal Taste Restaurant Website
+# Royal Taste Restaurant Website
 
 A modern, responsive, and interactive restaurant website built using **HTML, CSS, and JavaScript**.
 
-## 🌐 Live Demo
+## Live Demo
 
 Add your GitHub Pages link here:
 
@@ -12,7 +12,7 @@ https://yourusername.github.io/Task-3-Restaurant-Website/
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Royal Taste Restaurant Website is a professional business website designed for a restaurant to showcase its menu, attract customers, increase reservations, and improve online presence.
 
@@ -20,9 +20,9 @@ The website features a modern UI, responsive design, menu filtering, food recomm
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🎨 User Interface
+### User Interface
 
 - Modern Responsive Design
 - Mobile Friendly Layout
@@ -32,7 +32,7 @@ The website features a modern UI, responsive design, menu filtering, food recomm
 - Loading Screen Animation
 - Dark Mode / Light Mode
 
-### 🍕 Restaurant Features
+### Restaurant Features
 
 - Interactive Menu Section
 - Menu Search Functionality
@@ -46,7 +46,7 @@ The website features a modern UI, responsive design, menu filtering, food recomm
 - Google Maps Integration
 - WhatsApp Quick Contact Button
 
-### 💾 Local Storage Features
+### Local Storage Features
 
 - Stores Reservations
 - Stores Newsletter Subscribers
@@ -55,7 +55,7 @@ The website features a modern UI, responsive design, menu filtering, food recomm
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Frontend
 
@@ -70,7 +70,7 @@ The website features a modern UI, responsive design, menu filtering, food recomm
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 restaurant-website/
@@ -88,7 +88,7 @@ restaurant-website/
 
 ---
 
-## 📱 Sections Included
+## Sections Included
 
 ### Home
 
@@ -142,7 +142,7 @@ restaurant-website/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Clone Repository
 
@@ -166,7 +166,7 @@ in your browser.
 
 ---
 
-## 📤 Git Commands
+## Git Commands
 
 ### Initialize Git
 
@@ -201,7 +201,7 @@ git push -u origin main
 
 ---
 
-## 🎯 Business Benefits
+## Business Benefits
 
 This website helps restaurants:
 
@@ -215,7 +215,7 @@ This website helps restaurants:
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Online Food Ordering
 - Payment Gateway Integration
